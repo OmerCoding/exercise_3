@@ -12,7 +12,7 @@ X = [ones_to_X X];
 a_2_mat = sigmoid(Theta1 * X');
 a_2_mat = [ones_to_X';a_2_mat];
 
-a_3_mat = [Theta2 * a_2_mat];
+a_3_mat = sigmoid(Theta2 * a_2_mat);
 
 [val, index] = max(a_3_mat);
 
